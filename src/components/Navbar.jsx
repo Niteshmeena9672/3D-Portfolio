@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { styles } from "../styles";
 import { navLinks } from "../constants/index";
-import { logo, menu, close } from "./Assests";
+import { logo, menu, close } from './assests';
 
 const Navbar = () => {
   const [active, setActive] = useState(""); // Adding the 'active' state variable
