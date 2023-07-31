@@ -1,7 +1,10 @@
 import { Html, useProgress } from "@react-three/drei";
 
+// A custom component for displaying a loader while the canvas animations are loading.
 const CanvasLoader = () => {
+  // Get the loading progress using the useProgress hook provided by @react-three/drei.
   const { progress } = useProgress();
+
   return (
     <Html
       as='div'
@@ -13,7 +16,9 @@ const CanvasLoader = () => {
         flexDirection: "column",
       }}
     >
+      {/* A visual representation of the loader */}
       <span className='canvas-loader'></span>
+      {/* Display the loading progress as a percentage */}
       <p
         style={{
           fontSize: 14,
