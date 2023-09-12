@@ -1,4 +1,4 @@
-// Importing various assets from the '../components/Assests' file
+// Importing various assets from the '../components/assests' file
 import {
   mobile,
   backend,
@@ -24,7 +24,7 @@ import {
   jobit,
   tripguide,
   threejs,
-} from '../components/Assests';
+} from '../components/assests';
 
 // Navigation links for the portfolio website
 export const navLinks = [
@@ -40,6 +40,10 @@ export const navLinks = [
     id: "contact",
     title: "Contact",
   },
+  {
+    id : "https://chat.openai.com/",
+    title : "Resume"
+  }
 ];
 
 // Array of services provided by the person/portfolio owner

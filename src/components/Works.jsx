@@ -1,5 +1,6 @@
 // Import React library to define and use React components
 import React from "react";
+import { AiFillEye } from 'react-icons/ai';
 
 // Import the Tilt component from "react-tilt" for adding a parallax tilt effect
 import { Tilt } from "react-tilt";
@@ -38,39 +39,56 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
         {/* Project image */}
-        <div className='relative w-full h-[230px]'>
+        <div className="relative w-full h-[230px]">
           <img
             src={image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
+            alt="project_image"
+            className="w-full h-full object-cover rounded-2xl"
           />
-
-          {/* GitHub icon for the project's source code */}
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div>
-          </div>
         </div>
 
         {/* Project details */}
-        <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+        <div className="mt-5">
+          <h3 className="text-white font-bold text-[24px] justify-center flex item-center">{name}</h3>
+          <p className="mt-2 text-secondary text-[14px]">
+            {description}
+
+            <div className="py-2 card-img_hover mr-0 pr-0 end-0 flex justify-between items-center">
+              {/* Preview Icon and Label */}
+              <div className="flex flex-col items-center">
+                <div
+                  onClick={() => window.open(preview_link, "_blank")}
+                  className="black-gradient w-auto h-auto rounded-full flex justify-center items-center cursor-pointer"
+                >
+                  <AiFillEye className="w-10 h-10" />
+
+                </div>
+                <h3 className="flex justify-center py-0 mt-2 text-l font-bold">
+                  Preview
+                </h3>
+              </div>
+
+              {/* GitHub Icon and Label */}
+              <div className="flex flex-col items-center">
+                <div
+                  onClick={() => window.open(source_code_link, "_blank")}
+                  className="black-gradient w-auto h-auto rounded-full flex justify-center items-center cursor-pointer"
+                >
+                  <img src={github} alt="source code" className="w-10 h-10" />
+                </div>
+                <h3 className="flex justify-center py-0 mt-2 text-l font-bold">
+                  GitHub
+                </h3>
+              </div>
+            </div>
+          </p>
         </div>
 
         {/* Tags for project */}
-        <div className='mt-4 flex flex-wrap gap-2'>
+        <div className="mt-4 flex flex-wrap gap-2">
           {tags.map((tag) => (
             <p
               key={`${name}-${tag.name}`}
@@ -96,10 +114,10 @@ const Works = () => {
       </motion.div>
 
       {/* Introduction paragraph */}
-      <div className='w-full flex'>
+      <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcase my skills and experience through
           real-world examples of my work. Each project is briefly described with
@@ -110,7 +128,7 @@ const Works = () => {
       </div>
 
       {/* Display project cards */}
-      <div className='mt-20 flex flex-wrap gap-7'>
+      <div className="mt-20 flex flex-wrap gap-7">
         {/* Map through the list of projects and create a ProjectCard component for each project */}
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
