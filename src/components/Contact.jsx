@@ -42,6 +42,9 @@ const Contact = () => {
   };
 
   // Function to handle form submission
+  // template_0o9djuo  
+    // service_tm179ga
+    // UyEnztMbUWZQR98CY
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
@@ -49,16 +52,16 @@ const Contact = () => {
     // Sending email using emailjs API
     emailjs
       .send(
-        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+      'service_tm179ga',
+        'template_0o9djuo',
         {
           from_name: form.name,
-          to_name: "JavaScript Mastery",
+          to_name: "Nitesh Meena",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: "niteshmeena9672@gmail.com",
           message: form.message,
         },
-        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+        'UyEnztMbUWZQR98CY'
       )
       .then(
         () => {
