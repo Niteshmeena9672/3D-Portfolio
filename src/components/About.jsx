@@ -48,8 +48,8 @@ const About = () => {
     <>
       {/* Framer Motion animation for the introduction section */}
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        {/* <p className={styles.sectionSubText}>Introduction</p> */}
+        <h2 className={styles.sectionHeadText}>Introduction</h2>
       </motion.div>
 
       {/* Framer Motion animation for the introduction text */}

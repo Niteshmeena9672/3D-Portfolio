@@ -111,14 +111,14 @@ const Contact = () => {
           </a>
 
           <a href="mailto:meena.58@iitj.ac.in">
-            <img 
+            <img
               src={mail_logo}
               alt="Mail Logo"
               className=" w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 text-white hover:text-primary transition"
             />
           </a>
           <a href="https://github.com/Niteshmeena9672" target="#">
-            <img 
+            <img
               src={github_logo}
               alt="Github Logo"
               className=" w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 text-white hover:text-primary transition"
@@ -134,7 +134,9 @@ const Contact = () => {
         >
           {/* Name input */}
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4 text-xl">Your Name</span>
+            <span className="text-white font-medium mb-4 text-xl">
+              Your Name
+            </span>
             <input
               type="text"
               name="name"
@@ -147,7 +149,9 @@ const Contact = () => {
 
           {/* Email input */}
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4 text-xl">Your email</span>
+            <span className="text-white font-medium mb-4 text-xl">
+              Your email
+            </span>
             <input
               type="email"
               name="email"
@@ -160,7 +164,9 @@ const Contact = () => {
 
           {/* Message textarea */}
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4 text-xl">Your Message</span>
+            <span className="text-white font-medium mb-4 text-xl">
+              Your Message
+            </span>
             <textarea
               rows={7}
               name="message"
@@ -173,11 +179,12 @@ const Contact = () => {
 
           {/* Submit button */}
           <button
-            type="submit"
-            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary "
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
+  type="submit"
+  className="bg-purple-600 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md"
+>
+  {loading ? "Sending..." : "Send"}
+</button>
+
         </form>
       </motion.div>
 

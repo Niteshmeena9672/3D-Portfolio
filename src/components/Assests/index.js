@@ -29,6 +29,12 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import matlab from "./tech/matlab.png";
+import c from "./tech/c.png";
+import cpp from "./tech/cpp.png";
+import python from "./tech/python.png";
+import mysql from "./tech/mysql.png";
+
 
 export {
   logo,
@@ -59,4 +65,10 @@ export {
   carrent,
   jobit,
   tripguide,
+  matlab,
+  c,
+  cpp,
+  python,
+  mysql,
+  
 };

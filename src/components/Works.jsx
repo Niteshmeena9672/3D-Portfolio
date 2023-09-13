@@ -10,7 +10,6 @@ import { motion } from "framer-motion";
 
 // Import styles and assets
 import { styles } from "../styles";
-import github from "./assests/github.png";
 
 // Import the SectionWrapper higher-order component from "../hoc" file
 import { SectionWrapper } from "../hoc";
@@ -42,13 +41,13 @@ const ProjectCard = ({
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
       >
         {/* Project image */}
-        <div className="relative w-full h-[230px]">
+        {/* <div className="relative w-full h-[230px]">
           <img
             src={image}
             alt="project_image"
             className="w-full h-full object-cover rounded-2xl"
           />
-        </div>
+        </div> */}
 
         {/* Project details */}
         <div className="mt-5">
@@ -56,34 +55,7 @@ const ProjectCard = ({
           <p className="mt-2 text-secondary text-[14px]">
             {description}
 
-            <div className="py-2 card-img_hover mr-0 pr-0 end-0 flex justify-between items-center">
-              {/* Preview Icon and Label */}
-              <div className="flex flex-col items-center">
-                <div
-                  onClick={() => window.open(preview_link, "_blank")}
-                  className="black-gradient w-auto h-auto rounded-full flex justify-center items-center cursor-pointer"
-                >
-                  <AiFillEye className="w-10 h-10" />
-
-                </div>
-                <h3 className="flex justify-center py-0 mt-2 text-l font-bold">
-                  Preview
-                </h3>
-              </div>
-
-              {/* GitHub Icon and Label */}
-              <div className="flex flex-col items-center">
-                <div
-                  onClick={() => window.open(source_code_link, "_blank")}
-                  className="black-gradient w-auto h-auto rounded-full flex justify-center items-center cursor-pointer"
-                >
-                  <img src={github} alt="source code" className="w-10 h-10" />
-                </div>
-                <h3 className="flex justify-center py-0 mt-2 text-l font-bold">
-                  GitHub
-                </h3>
-              </div>
-            </div>
+            
           </p>
         </div>
 
@@ -109,8 +81,8 @@ const Works = () => {
     <>
       {/* Animation for section heading */}
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        {/* <p className={`${styles.sectionSubText} `}>My work</p> */}
+        <h2 className={`${styles.sectionHeadText}`}>My Coursework.</h2>
       </motion.div>
 
       {/* Introduction paragraph */}

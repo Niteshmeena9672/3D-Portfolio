@@ -1,5 +1,7 @@
 // Importing required modules from React and external libraries
 import React from "react";
+import github from "./assests/github.png";
+import { AiFillEye } from "react-icons/ai";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -45,13 +47,41 @@ const ExperienceCard = ({ experience }) => {
     >
       <div>
         {/* Experience title */}
-        <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+        <h3 className='text-white text-[24px] font-bold text-center'>{experience.title}</h3>
         {/* Experience company name */}
         <p
           className='text-secondary text-[16px] font-semibold'
           style={{ margin: 0 }}
         >
-          {experience.company_name}
+          {/* {experience.company_name} */}
+          <div className="py-2 card-img_hover mr-10 ml-10 end-0 flex justify-between items-center">
+              {/* Preview Icon and Label */}
+              <div className="flex flex-col items-center">
+                <div
+                  onClick={() => window.open(preview_link, "_blank")}
+                  className="black-gradient w-auto h-auto rounded-full flex justify-center items-center cursor-pointer"
+                >
+                  <AiFillEye className="w-10 h-10" />
+
+                </div>
+                <h3 className="flex justify-center py-0 mt-2 text-l font-bold">
+                  Preview
+                </h3>
+              </div>
+
+              {/* GitHub Icon and Label */}
+              <div className="flex flex-col items-center">
+                <div
+                  onClick={() => window.open(source_code_link, "_blank")}
+                  className="black-gradient w-auto h-auto rounded-full flex justify-center items-center cursor-pointer"
+                >
+                  <img src={github} alt="source code" className="w-10 h-10" />
+                </div>
+                <h3 className="flex justify-center py-0 mt-2 text-l font-bold">
+                  GitHub
+                </h3>
+              </div>
+            </div>
         </p>
       </div>
 

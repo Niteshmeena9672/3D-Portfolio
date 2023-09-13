@@ -24,6 +24,11 @@ import {
   jobit,
   tripguide,
   threejs,
+  matlab,
+  c,
+  cpp,
+  python,
+  mysql,
 } from '../components/assests';
 
 // Navigation links for the portfolio website
@@ -88,10 +93,10 @@ const technologies = [
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -104,22 +109,38 @@ const technologies = [
     name: "MongoDB",
     icon: mongodb,
   },
+  // {
+  //   name: "Three JS",
+  //   icon: threejs,
+  // },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "cpp",
+    icon: cpp,
   },
   {
-    name: "git",
-    icon: git,
+    name: "c",
+    icon: c,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "python",
+    icon: python,
   },
   {
-    name: "docker",
-    icon: docker,
+    name: "mysql",
+    icon: mysql,
   },
+  // {
+  //   name: "figma",
+  //   icon: figma,
+  // },
+  {
+    name: "matlab",
+    icon: matlab,
+  },
+  // {
+  //   name: "docker",
+  //   icon: docker,
+  // },
 ];
 
 // Array of work experiences at different companies
