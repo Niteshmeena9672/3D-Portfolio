@@ -2,6 +2,7 @@
 import React from "react";
 import github from "./assests/github.png";
 import { AiFillEye } from "react-icons/ai";
+// import github_logo from "./assests/github_logo.svg";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -110,7 +111,7 @@ const Experience = () => {
           What I have done so far
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>
-          Work Experience.
+          Projects.
         </h2>
       </motion.div>
 

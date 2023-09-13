@@ -37,7 +37,7 @@ const Navbar = () => {
             <a href="#about">About</a>
           </li>
           <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
-            <a href="#works">Project</a>
+            <a href="#experience">Project</a>
           </li>
           <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
             <a href="#contact">Contact</a>
