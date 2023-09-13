@@ -139,4 +139,4 @@ const Works = () => {
 };
 
 // Export the Works component wrapped with the SectionWrapper higher-order component with an empty string as the second parameter
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "works");

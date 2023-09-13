@@ -37,13 +37,18 @@ const Navbar = () => {
             <a href="#about">About</a>
           </li>
           <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
-            <a href="#work">Work</a>
+            <a href="#works">Project</a>
           </li>
           <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
             <a href="#contact">Contact</a>
           </li>
           <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
-            <a href="https://drive.google.com/file/d/1nFI8dj8HPThAQIrTWtOb5onJGKwP4voQ/view" target="#">Resume</a>
+            <a
+              href="https://drive.google.com/file/d/1nFI8dj8HPThAQIrTWtOb5onJGKwP4voQ/view"
+              target="#"
+            >
+              Resume
+            </a>
           </li>
         </ul>
 
@@ -75,11 +80,21 @@ const Navbar = () => {
                     setActive(link.title);
                   }}
                 >
-                  <a href={`${link.id}`}>{link.title}</a>
+                  <a
+                    href={link.title === "Resume" ? link.id : `#${link.id}`}
+                    target={link.title === "Resume" ? "_blank" : ""}
+                    rel={link.title === "Resume" ? "noopener noreferrer" : ""}
+                    spy={true}
+                    smooth={true}
+                    duration={500}
+                  >
+                    {link.title}
+                  </a>
                 </li>
               ))}
             </ul>
           </div>
+          {/* With these changes, the links in the small screen navbar should scroll smoothly to the corresponding sections when clicked. The links in the big screen navbar remain unchanged. */}
         </div>
       </div>
     </nav>

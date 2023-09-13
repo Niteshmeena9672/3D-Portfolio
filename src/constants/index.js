@@ -33,15 +33,15 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "works",
+    title: "Projects",
   },
   {
     id: "contact",
     title: "Contact",
   },
   {
-    id : "https://chat.openai.com/",
+    id : "https://drive.google.com/file/d/1nFI8dj8HPThAQIrTWtOb5onJGKwP4voQ/view",
     title : "Resume"
   }
 ];

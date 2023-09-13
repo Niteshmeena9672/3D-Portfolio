@@ -101,4 +101,4 @@ const Experience = () => {
 };
 
 // Exporting the Experience component wrapped with the SectionWrapper HOC, with a section ID of "work"
-export default SectionWrapper(Experience, "work");
+export default SectionWrapper(Experience, "experience");
