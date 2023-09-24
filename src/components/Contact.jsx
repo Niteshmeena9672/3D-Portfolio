@@ -1,4 +1,5 @@
 // Importing required modules from React
+import api from "../../email.js";
 import React, { useRef, useState } from "react";
 import mail_logo from "./assests/mail_logo.svg";
 import linkedin_logo from "./assests/linkedin_logo.svg";
@@ -54,16 +55,16 @@ const Contact = () => {
     // Sending email using emailjs API
     emailjs
       .send(
-        "service_tm179ga",
-        "template_0o9djuo",
+        api.service,
+        api.template,
         {
           from_name: form.name,
-          to_name: "Nitesh Meena",
+          to_name: api.name,
           from_email: form.email,
-          to_email: "niteshmeena9672@gmail.com",
+          to_email: api.email,
           message: form.message,
         },
-        "UyEnztMbUWZQR98CY"
+        api.PrivateKey
       )
       .then(
         () => {
