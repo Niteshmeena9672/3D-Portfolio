@@ -4,10 +4,12 @@ import {
   backend,
   creator,
   web,
+  problem_solver,
   javascript,
   typescript,
   html,
   css,
+  mern_logo,
   reactjs,
   redux,
   tailwind,
@@ -29,6 +31,10 @@ import {
   cpp,
   python,
   mysql,
+  thinker_logo,
+  communicator_logo,
+  team_work,
+  programmer,
 } from '../components/assests';
 
 // Navigation links for the portfolio website
@@ -54,20 +60,20 @@ export const navLinks = [
 // Array of services provided by the person/portfolio owner
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "Quick Learner",
+    icon: programmer,
   },
   {
-    title: "React Developer",
-    icon: mobile,
+    title: "Team Collaboration",
+    icon: team_work,
   },
   {
     title: "Critical Thinker",
-    icon: backend,
+    icon: thinker_logo,
   },
   {
     title: "Problem Solver",
-    icon: creator,
+    icon: problem_solver,
   },
 ];
 
