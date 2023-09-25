@@ -84,8 +84,8 @@ const Navbar = () => {
                     href={link.title === "Resume" ? link.id : `#${link.id}`}
                     target={link.title === "Resume" ? "_blank" : ""}
                     rel={link.title === "Resume" ? "noopener noreferrer" : ""}
-                    spy={true}
-                    smooth={true}
+                    spy={1}
+                    smooth={1}
                     duration={500}
                   >
                     {link.title}

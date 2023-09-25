@@ -50,7 +50,7 @@ const ExperienceCard = ({ experience }) => {
         {/* Experience title */}
         <h3 className='text-white text-[24px] font-bold text-center'>{experience.title}</h3>
         {/* Experience company name */}
-        <p
+        <div
           className='text-secondary text-[16px] font-semibold'
           style={{ margin: 0 }}
         >
@@ -83,7 +83,7 @@ const ExperienceCard = ({ experience }) => {
                 </h3>
               </div>
             </div>
-        </p>
+        </div>
       </div>
 
       {/* List of points describing the experience */}
