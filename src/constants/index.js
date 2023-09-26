@@ -77,23 +77,23 @@ const services = [
 // Array of technologies the person/portfolio owner is proficient in
 const technologies = [
   {
-    name: "HTML 5",
+    name: "html",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "css",
     icon: css,
   },
   {
-    name: "JavaScript",
+    name: "javascript",
     icon: javascript,
   },
   {
-    name: "TypeScript",
+    name: "typescript",
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: "reactjs",
     icon: reactjs,
   },
   // {
@@ -101,15 +101,15 @@ const technologies = [
   //   icon: redux,
   // },
   {
-    name: "Tailwind CSS",
+    name: "tailwind",
     icon: tailwind,
   },
   {
-    name: "Node JS",
+    name: "nodejs",
     icon: nodejs,
   },
   {
-    name: "MongoDB",
+    name: "mongodb",
     icon: mongodb,
   },
   // {
