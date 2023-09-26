@@ -1,9 +1,6 @@
 // Importing various assets from the '../../assests' file
 import {
-  mobile,
-  backend,
-  creator,
-  web,
+  
   problem_solver,
   javascript,
   typescript,
@@ -18,15 +15,10 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
+ 
   // new icons ToDO remove old one
 
-  carrent,
-  jobit,
-  tripguide,
+ 
   threejs,
   matlab,
   c,
