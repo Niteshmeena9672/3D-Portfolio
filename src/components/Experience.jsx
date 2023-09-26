@@ -1,6 +1,6 @@
 // Importing required modules from React and external libraries
 import React from "react";
-import github from "./assests/github.png";
+import github from "../../assests/github.png";
 import { AiFillEye } from "react-icons/ai";
 import {
   VerticalTimeline,

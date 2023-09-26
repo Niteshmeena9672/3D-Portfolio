@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { navLinks } from "../constants/index";
-import logo from "./assests/logo.png";
-import menu from "./assests/menu.svg";
-import close from "./assests/close.svg";
+import logo from "../../assests/logo.png";
+import menu from "../../assests/menu.svg";
+import close from "../../assests/close.svg";
 
 // Define the Navbar component
 const Navbar = () => {
@@ -45,7 +45,7 @@ const Navbar = () => {
           </li>
           <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
             <a
-              href="https://drive.google.com/file/d/1nFI8dj8HPThAQIrTWtOb5onJGKwP4voQ/view"
+              href="https://drive.google.com/file/d/1CJ4bAJ76WlLNJXyHBTtbpR37E-l7U3hx/view?usp=sharing"
               target="#"
             >
               Resume

@@ -1,11 +1,12 @@
 // Importing required modules from React
 import api from "../../email.js";
 import React, { useRef, useState } from "react";
-import mail_logo from "./assests/mail_logo.svg";
-import linkedin_logo from "./assests/linkedin_logo.svg";
+import mail_logo from "../../assests/mail_logo.svg";
+import linkedin_logo from "../../assests/linkedin_logo.svg";
+
 // Importing motion-related modules from framer-motion library
 import { motion } from "framer-motion";
-import github_logo from "./assests/github_logo.svg";
+import github_logo from "../../assests/github_logo.svg";
 // Importing the emailjs library for sending email from the form
 import emailjs from "@emailjs/browser";
 
@@ -18,7 +19,7 @@ import { EarthCanvas } from "./canvas";
 
 // Importing the higher-order component (HOC) SectionWrapper
 import { SectionWrapper } from "../hoc";
-import { github } from "./assests";
+import { github } from "../../assests";
 
 // Contact component that represents the contact form section
 const Contact = () => {

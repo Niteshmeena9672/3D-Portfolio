@@ -1,4 +1,4 @@
-// Importing various assets from the '../components/assests' file
+// Importing various assets from the '../../assests' file
 import {
   mobile,
   backend,
@@ -37,11 +37,11 @@ import {
   communicator_logo,
   team_work,
   programmer,
-} from '../components/assests';
-import meesho_logo from '../components/assests/meesho_logo.ico';
-import active_learning_logo from '../components/assests/active_learning_logo.jpg';
-import ambulance from '../components/assests/ambulance.png';
-import threads_icon from '../components/assests/threads_icon.png';
+} from '../../assests';
+import meesho_logo from '../../assests/meesho_logo.ico';
+import active_learning_logo from '../../assests/active_learning_logo.jpg';
+import ambulance from '../../assests/ambulance.png';
+import threads_icon from '../../assests/threads_icon.png';
 // Navigation links for the portfolio website
 export const navLinks = [
   {
@@ -57,7 +57,7 @@ export const navLinks = [
     title: "Contact",
   },
   {
-    id : "https://drive.google.com/file/d/1nFI8dj8HPThAQIrTWtOb5onJGKwP4voQ/view",
+    id : "https://drive.google.com/file/d/1CJ4bAJ76WlLNJXyHBTtbpR37E-l7U3hx/view?usp=sharing",
     title : "Resume"
   }
 ];
@@ -236,43 +236,14 @@ const experiences = [
     ],
     
   },
-  {
-    title: "AUTOMATIC AMBULANCE SIGNALLING SYSTEM",
-    project_sub_title: "Preventing Delay in Medical Assistance",
-    date: "May 2020 - April 2021",
-    iconBg: "#383E56",
-    icon: ambulance,
-    points: [
-      "Addressed the issue of delayed medical assistance by developing a prototype signaling system.",
-      "The system is designed to send an SOS signal to a predefined emergency number in the event of a car crash.",
-      "The project aimed to reduce the daily mortality rate of approximately 24,012 people due to delays in receiving medical help."
-    ],
-    tags: [
-      {
-        name: "Vs-Code",
-        color: "blue-text-gradient"
-      },
-      {
-        name: "C++",
-        color: "green-text-gradient"
-      },
-      {
-        name: "Arduino",
-        color: "pink-text-gradient"
-      },
-      {
-        name: "GPS Module",
-        color: "blue-text-gradient"
-      },
-      
-    ]
-  },
+  
   
   {
     title: "MEESHO WEBSITE CLONE",
     project_sub_title: "Responsive E-Commerce Clone",
     date: "Feb 2023 - Feb 2023",
     iconBg: "#f5f5f5",
+    github_link:"https://github.com/Niteshmeena9672/Meesho-clone.git",
     icon: meesho_logo, // You can replace 'meesho_logo' with the actual logo or icon for your project.
     points: [
       "Developed a responsive clone of the Meesho website.",
@@ -298,6 +269,38 @@ const experiences = [
         name: "Git",
         color: "orange-text-gradient"
       }
+    ]
+  },
+  {
+    title: "AUTOMATIC AMBULANCE SIGNALLING SYSTEM",
+    project_sub_title: "Preventing Delay in Medical Assistance",
+    date: "May 2020 - April 2021",
+    iconBg: "#383E56",
+    icon: ambulance,
+    github_link:"https://github.com/Niteshmeena9672/AUTOMATIC-AMBULANCE-SIGNALLING-SYSTEM.git",
+    points: [
+      "Addressed the issue of delayed medical assistance by developing a prototype signaling system.",
+      "The system is designed to send an SOS signal to a predefined emergency number in the event of a car crash.",
+      "The project aimed to reduce the daily mortality rate of approximately 24,012 people due to delays in receiving medical help."
+    ],
+    tags: [
+      {
+        name: "Vs-Code",
+        color: "blue-text-gradient"
+      },
+      {
+        name: "C++",
+        color: "green-text-gradient"
+      },
+      {
+        name: "Arduino",
+        color: "pink-text-gradient"
+      },
+      {
+        name: "GPS Module",
+        color: "blue-text-gradient"
+      },
+      
     ]
   },
   
