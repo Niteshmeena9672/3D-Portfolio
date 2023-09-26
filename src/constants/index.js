@@ -6,27 +6,16 @@ import {
   typescript,
   html,
   css,
-  mern_logo,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
-  git,
-  figma,
-  docker,
- 
-  // new icons ToDO remove old one
-
- 
-  threejs,
   matlab,
   c,
   cpp,
   python,
   mysql,
   thinker_logo,
-  communicator_logo,
   team_work,
   programmer,
 } from '../../assests';
