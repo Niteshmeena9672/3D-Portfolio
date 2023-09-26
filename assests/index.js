@@ -30,8 +30,7 @@ import team_work from "./team_work.png";
 import programmer from "./programmer.png";
 
 export {
-  logo,
-  
+  logo,  
   github,
   menu,
   close,
@@ -48,9 +47,6 @@ export {
   tailwind,
   typescript,
   threejs,
-
-  
-
   matlab,
   c,
   cpp,
