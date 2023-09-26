@@ -38,6 +38,9 @@ import {
   team_work,
   programmer,
 } from '../components/assests';
+import meesho_logo from '../components/assests/meesho_logo.ico';
+import active_learning_logo from '../components/assests/active_learning_logo.jpg';
+import ambulance from '../components/assests/ambulance.png';
 import threads_icon from '../components/assests/threads_icon.png';
 // Navigation links for the portfolio website
 export const navLinks = [
@@ -197,8 +200,8 @@ const experiences = [
   {
     title: "Active Learning for SVM Model Enhancement ",
     project_sub_title: "Active Learning ",
-    icon: threads_icon,
-    iconBg: "#383E56",
+    icon: active_learning_logo,
+    iconBg: "#f5f5f5",
     date: "July 2023 - Aug 2023",
     github_link:"https://github.com/Niteshmeena9672/Active-Learning",
     points: [
@@ -234,84 +237,70 @@ const experiences = [
     
   },
   {
-    title: "Threads App",
-    project_sub_title: "Full-stack MERN Apps",
-    icon: threads_icon,
+    title: "AUTOMATIC AMBULANCE SIGNALLING SYSTEM",
+    project_sub_title: "Preventing Delay in Medical Assistance",
+    date: "May 2020 - April 2021",
     iconBg: "#383E56",
-    date: "July 2023 - Aug 2023",
-    github_link:"https://github.com/Niteshmeena9672/Threads",
+    icon: ambulance,
     points: [
-      "Developed a social media app called Thread using the MERN stack. Users can share their threads, create communities, invite others, and join existing communities.",
-      "Implemented features such as proficient data management with MongoDB, crafting an engaging user interface with Tailwind-css, implementing robust user authentication, and real-time event handling.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-     
+      "Addressed the issue of delayed medical assistance by developing a prototype signaling system.",
+      "The system is designed to send an SOS signal to a predefined emergency number in the event of a car crash.",
+      "The project aimed to reduce the daily mortality rate of approximately 24,012 people due to delays in receiving medical help."
     ],
     tags: [
       {
-        name: "Python",
-        color: "blue-text-gradient",
+        name: "Vs-Code",
+        color: "blue-text-gradient"
       },
       {
-        name: "Pandas",
-        color: "green-text-gradient",
+        name: "C++",
+        color: "green-text-gradient"
       },
       {
-        name: "NumPy",
-        color: "pink-text-gradient",
+        name: "Arduino",
+        color: "pink-text-gradient"
       },
       {
-        name: "Scikit-learn",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Matplotlib",
-        color: "orange-text-gradient",
+        name: "GPS Module",
+        color: "blue-text-gradient"
       },
       
-    ],
-    
+    ]
   },
+  
   {
-    title: "Threads App",
-    project_sub_title: "Full-stack MERN Apps",
-    icon: threads_icon,
-    iconBg: "#383E56",
-    date: "July 2023 - Aug 2023",
-    github_link:"https://github.com/Niteshmeena9672/Threads",
+    title: "MEESHO WEBSITE CLONE",
+    project_sub_title: "Responsive E-Commerce Clone",
+    date: "Feb 2023 - Feb 2023",
+    iconBg: "#f5f5f5",
+    icon: meesho_logo, // You can replace 'meesho_logo' with the actual logo or icon for your project.
     points: [
-      "Developed a social media app called Thread using the MERN stack. Users can share their threads, create communities, invite others, and join existing communities.",
-      "Implemented features such as proficient data management with MongoDB, crafting an engaging user interface with Tailwind-css, implementing robust user authentication, and real-time event handling.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-     
+      "Developed a responsive clone of the Meesho website.",
+      "Implemented a comprehensive navigation system, allowing users to easily explore various product categories.",
+      "Designed and integrated a responsive header with essential elements such as a logo, search functionality, download app buttons, and user profile and cart icons.",
+    
     ],
     tags: [
       {
-        name: "ReactJS",
-        color: "blue-text-gradient",
+        name: "HTML",
+        color: "blue-text-gradient"
       },
       {
-        name: "MongoDB",
-        color: "green-text-gradient",
+        name: "CSS",
+        color: "green-text-gradient"
       },
       {
-        name: "Material UI",
-        color: "pink-text-gradient",
+        name: "JavaScript",
+        color: "pink-text-gradient"
       },
-      {
-        name: "Express.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Clerk",
-        color: "orange-text-gradient",
-      },
-      {
-        "name": "Node.js",
-        color: "pink-text-gradient",
-      }
-    ],
     
+      {
+        name: "Git",
+        color: "orange-text-gradient"
+      }
+    ]
   },
+  
   
 ];
 

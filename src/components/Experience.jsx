@@ -37,12 +37,13 @@ const ExperienceCard = ({ experience }) => {
       // Icon for the timeline element
       icon={
         <div className="flex justify-center items-center w-full h-full">
-          <img
-            src={experience.icon}
-            alt={experience.company_name}
-            className="w-[60%] h-[60%] object-contain"
-          />
-        </div>
+  <img
+    src={experience.icon}
+    alt={experience.company_name}
+    className="w-[80%] h-[80%] object-contain rounded-full"
+  />
+</div>
+
       }
     >
       <div>
@@ -90,7 +91,10 @@ const ExperienceCard = ({ experience }) => {
               </h3>
             </div>
           </div> */}
+
+
           {/* To Do when preview part completed remove this one and update above one */}
+
           <div className="flex flex-col items-center">
               <div
                 onClick={() => window.open(source_code_link, "_blank")}
@@ -112,7 +116,7 @@ const ExperienceCard = ({ experience }) => {
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className="text-white-100 text-[14px] pl-1 tracking-wider"
+            className="text-white-100 text-[16px] pl-1 tracking-wider"
           >
             {point}
           </li>
@@ -136,12 +140,12 @@ const Experience = () => {
   return (
     <>
       {/* Heading with motion animation */}
-      <motion.div variants={textVariant()}>
+      
         <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
         </p>
         <h2 className={`${styles.sectionHeadText} text-center`}>Projects.</h2>
-      </motion.div>
+   
 
       {/* Vertical timeline displaying work experiences */}
       <div className="mt-20 flex flex-col">
