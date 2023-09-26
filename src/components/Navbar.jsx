@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { styles } from "../styles";
 import { navLinks } from "../constants/index";
-import { logo, menu, close } from "./assests";
+import logo from "../../assests/logo.png";
+import menu from "../../assests/menu.svg";
+import close from "../../assests/close.svg";
 
 // Define the Navbar component
 const Navbar = () => {
@@ -44,7 +45,7 @@ const Navbar = () => {
           </li>
           <li className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
             <a
-              href="https://drive.google.com/file/d/1nFI8dj8HPThAQIrTWtOb5onJGKwP4voQ/view"
+              href="https://drive.google.com/file/d/1CJ4bAJ76WlLNJXyHBTtbpR37E-l7U3hx/view?usp=sharing"
               target="#"
             >
               Resume
@@ -84,8 +85,8 @@ const Navbar = () => {
                     href={link.title === "Resume" ? link.id : `#${link.id}`}
                     target={link.title === "Resume" ? "_blank" : ""}
                     rel={link.title === "Resume" ? "noopener noreferrer" : ""}
-                    spy={true}
-                    smooth={true}
+                    spy={1}
+                    smooth={1}
                     duration={500}
                   >
                     {link.title}

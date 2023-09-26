@@ -49,16 +49,20 @@ const About = () => {
       {/* Framer Motion animation for the introduction section */}
       <motion.div variants={textVariant()}>
         {/* <p className={styles.sectionSubText}>Introduction</p> */}
-        <h2 className={styles.sectionHeadText}>Introduction</h2>
+        <h2 className={`${styles.sectionHeadText} align-middle text-center`}>Introduction.</h2>
       </motion.div>
 
       {/* Framer Motion animation for the introduction text */}
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] max-w-6xl leading-[30px]'
       >
         {/* Content for the introduction paragraph */}
-        My name is Nitesh Meena . I come from Alwar, Rajasthan . Currently , I'm persuing my undergraduate degree in the discipline of chemical engineering at Indian Institute of Technology, Jodhpur . I'm very enthusiastic to learn about tech related stuffs like DSA , Web development , coding and so on and so forth.
+        <p className="text-center w-full flex justify-center items-center" > 
+
+        Hello, I'm Nitesh Meena from Alwar, Rajasthan. Currently, I'm pursuing my undergraduate degree in chemical engineering at the Indian Institute of Technology, Jodhpur. I'm passionate about technology and enjoy diving into areas like Data Structures and Algorithms, Web Development, and Machine Learning. Always eager to learn and explore the tech world!
+        </p>
+
       </motion.p>
 
       {/* Section displaying the service cards */}

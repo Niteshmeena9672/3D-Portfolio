@@ -1,8 +1,7 @@
 // Importing required modules from React and external libraries
 import React from "react";
-import github from "./assests/github.png";
+import github from "../../assests/github.png";
 import { AiFillEye } from "react-icons/ai";
-// import github_logo from "./assests/github_logo.svg";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -37,66 +36,101 @@ const ExperienceCard = ({ experience }) => {
       iconStyle={{ background: experience.iconBg }}
       // Icon for the timeline element
       icon={
-        <div className='flex justify-center items-center w-full h-full'>
-          <img
-            src={experience.icon}
-            alt={experience.company_name}
-            className='w-[60%] h-[60%] object-contain'
-          />
-        </div>
+        <div className="flex justify-center items-center w-full h-full">
+  <img
+    src={experience.icon}
+    alt={experience.company_name}
+    className="w-[80%] h-[80%] object-contain rounded-full"
+  />
+</div>
+
       }
     >
       <div>
         {/* Experience title */}
-        <h3 className='text-white text-[24px] font-bold text-center'>{experience.title}</h3>
-        {/* Experience company name */}
-        <p
-          className='text-secondary text-[16px] font-semibold'
+        <h3 className="text-white text-[24px] font-bold text-center">
+          {experience.title}
+        </h3>
+        <div
+          className="text-secondary text-[16px] font-semibold"
           style={{ margin: 0 }}
         >
+          {/* Experience company name */}
+          {/* <h3 className='text-secondary text-[16px] font-semibold'
+          style={{ margin: 0 }}>{experience.project_sub_title}</h3> */}
           {/* {experience.company_name} */}
-          <div className="py-2 card-img_hover mr-10 ml-10 end-0 flex justify-between items-center">
-              {/* Preview Icon and Label */}
-              <div className="flex flex-col items-center">
-                <div
-                  onClick={() => window.open(preview_link, "_blank")}
-                  className="black-gradient w-auto h-auto rounded-full flex justify-center items-center cursor-pointer"
-                >
-                  <AiFillEye className="w-10 h-10" />
 
-                </div>
-                <h3 className="flex justify-center py-0 mt-2 text-l font-bold">
-                  Preview
-                </h3>
+          {/* Main container for preview and github icon */}
+          
+          {/* <div className="py-2 card-img_hover mr-10 ml-10 end-0 flex justify-between items-center">
+         
+            <div className="flex flex-col items-center">
+              <div
+                onClick={() => window.open(preview_link, "_blank")}
+                className="black-gradient w-auto h-auto rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <AiFillEye className="w-10 h-10" />
               </div>
-
-              {/* GitHub Icon and Label */}
-              <div className="flex flex-col items-center">
-                <div
-                  onClick={() => window.open(source_code_link, "_blank")}
-                  className="black-gradient w-auto h-auto rounded-full flex justify-center items-center cursor-pointer"
-                >
-                  <img src={github} alt="source code" className="w-10 h-10" />
-                </div>
-                <h3 className="flex justify-center py-0 mt-2 text-l font-bold">
-                  GitHub
-                </h3>
-              </div>
+              <h3 className="flex justify-center py-0 mt-2 text-l font-bold">
+                Preview
+              </h3>
             </div>
-        </p>
+
+     
+            <div className="flex flex-col items-center">
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className="black-gradient w-auto h-auto rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <a href={experience.github_link} target="#">
+                  <img src={github} alt="source code" className="w-10 h-10" />
+                </a>
+              </div>
+              <h3 className="flex justify-center py-0 mt-2 text-l font-bold">
+                GitHub
+              </h3>
+            </div>
+          </div> */}
+
+
+          {/* To Do when preview part completed remove this one and update above one */}
+
+          <div className="flex flex-col items-center">
+              <div
+                onClick={() => window.open(source_code_link, "_blank")}
+                className="black-gradient w-auto h-auto rounded-full flex justify-center items-center cursor-pointer"
+              >
+                <a href={experience.github_link} target="#">
+                  <img src={github} alt="source code" className="w-10 h-10" />
+                </a>
+              </div>
+              <h3 className="flex justify-center py-0 mt-2 text-l font-bold">
+                GitHub
+              </h3>
+            </div>
+        </div>
       </div>
 
       {/* List of points describing the experience */}
-      <ul className='mt-5 list-disc ml-5 space-y-2'>
+      <ul className="mt-5 list-disc ml-5 space-y-2">
         {experience.points.map((point, index) => (
           <li
             key={`experience-point-${index}`}
-            className='text-white-100 text-[14px] pl-1 tracking-wider'
+            className="text-white-100 text-[16px] pl-1 tracking-wider"
           >
             {point}
           </li>
         ))}
       </ul>
+      {/* Tags for project */}
+      {/* <h1 className="text-white text-[24px] font-bold text-center">Technologies</h1> */}
+      <div className="mt-1 flex flex-wrap gap-2">
+        {experience.tags.map((tag) => (
+          <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
+            #{tag.name}
+          </p>
+        ))}
+      </div>
     </VerticalTimelineElement>
   );
 };
@@ -106,17 +140,15 @@ const Experience = () => {
   return (
     <>
       {/* Heading with motion animation */}
-      <motion.div variants={textVariant()}>
+      
         <p className={`${styles.sectionSubText} text-center`}>
           What I have done so far
         </p>
-        <h2 className={`${styles.sectionHeadText} text-center`}>
-          Projects.
-        </h2>
-      </motion.div>
+        <h2 className={`${styles.sectionHeadText} text-center`}>Projects.</h2>
+   
 
       {/* Vertical timeline displaying work experiences */}
-      <div className='mt-20 flex flex-col'>
+      <div className="mt-20 flex flex-col">
         <VerticalTimeline>
           {/* Mapping over experiences data and rendering ExperienceCard for each experience */}
           {experiences.map((experience, index) => (
