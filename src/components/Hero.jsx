@@ -48,8 +48,9 @@ const Hero = () => {
 
       {/* Animated circle at the bottom of the hero section */}
 
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className="absolute xl:bottom-28 bottom-8 w-full flex justify-center items-center">
         <a href="#about">
+
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             {/* Circular element moving up and down  */}
             <motion.div
