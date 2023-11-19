@@ -56,8 +56,7 @@ const ExperienceCard = ({ experience }) => {
           style={{ margin: 0 }}
         >
           {/* Experience company name */}
-          {/* <h3 className='text-secondary text-[16px] font-semibold'
-          style={{ margin: 0 }}>{experience.project_sub_title}</h3> */}
+          {/* <h3 className='text-secondary text-[16px] font-semibold' 
           {/* {experience.company_name} */}
 
           {/* Main container for preview and github icon */}

@@ -23,6 +23,8 @@ import meesho_logo from '../../assests/meesho_logo.ico';
 import active_learning_logo from '../../assests/active_learning_logo.jpg';
 import ambulance from '../../assests/ambulance.png';
 import threads_icon from '../../assests/threads_icon.png';
+import exposys_icon from '../../assests/exposys_icon.png';
+import appointment_logo from '../../assests/appointment.png';
 // Navigation links for the portfolio website
 export const navLinks = [
   {
@@ -138,11 +140,50 @@ const technologies = [
 // Array of work experiences at different companies
 const experiences = [
   {
+    title: "Videochat WebApp (Exposys Data Labs : Internship)",
+    project_sub_title: "Internship Project",
+    icon: exposys_icon,
+    iconBg: "#383E56",
+    date: "Oct 2023 - Nov 2023",
+    github_link:"https://github.com/Niteshmeena9672/Threads",
+    points: [
+      "Developed one video conferencing website called 'MeetMingle' using HTML, CSS, and JavaScript. Leveraged Agora SDK to provide a seamless and high-quality real-time voice and video communication experience for participants.",
+      "Designed an intuitive interface forthe application, ensuring a user-friendly experience.",
+      "Users can create dedicated meeting rooms and share unique room names with others, allowing easy access to meetings.",
+      "Enhanced collaboration by supporting more than 5 userssimultaneously, enabling screen sharing, and providing a platform for participants to engage in real-time chats during meetings.",
+     
+    ],
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Tailwind-CSS.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Agora-Sdk",
+        color: "orange-text-gradient",
+      },
+      
+    ],
+    
+  },
+  {
     title: "Threads App",
     project_sub_title: "Full-stack MERN Apps",
     icon: threads_icon,
     iconBg: "#383E56",
-    date: "July 2023 - Aug 2023",
+    date: "Sep 2023 - Oct 2023",
     github_link:"https://github.com/Niteshmeena9672/Threads",
     points: [
       "Developed a social media app called Thread using the MERN stack. Users can share their threads, create communities, invite others, and join existing communities.",
@@ -183,7 +224,7 @@ const experiences = [
     project_sub_title: "Active Learning ",
     icon: active_learning_logo,
     iconBg: "#f5f5f5",
-    date: "July 2023 - Aug 2023",
+    date: "Aug 2023 - Sep 2023",
     github_link:"https://github.com/Niteshmeena9672/Active-Learning",
     points: [
       "Implemented an active learning technique in Python to improve the performance of a Support Vector Machine(SVM) classifier.",
@@ -217,12 +258,55 @@ const experiences = [
     ],
     
   },
+  {
+    title: "Dr. Appointment ",
+    project_sub_title: "Mern Stack ",
+    icon: appointment_logo,
+    iconBg: "#f5f5f5",
+    date: "Aug 2023 - Sep 2023",
+    github_link:"https://github.com/Niteshmeena9672/Dr.-Appointment",
+    points: [
+      "Developed an interactive Dr. Appointment website to address hospital queue management challenges.",
+      "Designed and deployed a user-friendly registration and authentication system allowing users to manage profiles, apply for doctor roles,schedule appointments, check availability, and receive notifications increasing user satisfaction by 20%.",
+      "Administrators can accept or reject any user’s request to become a doctor, remove any user or doctor from the site, and view all users and applications reducing the false registers by 50%.",
+     
+     
+    ],
+    tags: [
+      {
+        name: "MongoDB",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Express.js",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind-CSS",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Redux,",
+        color: "blue-text-gradient",
+      },
+      
+    ],
+    
+  },
   
   
   {
     title: "MEESHO WEBSITE CLONE",
     project_sub_title: "Responsive E-Commerce Clone",
-    date: "Feb 2023 - Feb 2023",
+    date: "Feb 2023 - March 2023",
     iconBg: "#f5f5f5",
     github_link:"https://github.com/Niteshmeena9672/Meesho-clone.git",
     icon: meesho_logo, // You can replace 'meesho_logo' with the actual logo or icon for your project.
