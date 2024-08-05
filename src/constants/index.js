@@ -18,12 +18,14 @@ import {
   thinker_logo,
   team_work,
   programmer,
+ 
 } from '../../assests';
 import meesho_logo from '../../assests/meesho_logo.ico';
 import active_learning_logo from '../../assests/active_learning_logo.jpg';
 import ambulance from '../../assests/ambulance.png';
 import threads_icon from '../../assests/threads_icon.png';
 import exposys_icon from '../../assests/exposys_icon.png';
+import itjobxs_icon from '../../assests/itjobxs.png';
 import appointment_logo from '../../assests/appointment.png';
 // Navigation links for the portfolio website
 export const navLinks = [
@@ -40,7 +42,7 @@ export const navLinks = [
     title: "Contact",
   },
   {
-    id : "https://drive.google.com/file/d/12WRqDJaej_OcSFbrm41EpuJWzXuQI9sc/view?usp=drive_link",
+    id : "https://drive.google.com/file/d/1pvU6HaLDPNsUGCTngGJq2k-d7Cyv94Kg/view?usp=drive_link",
     title : "Resume"
   }
 ];
@@ -140,12 +142,12 @@ const technologies = [
 // Array of work experiences at different companies
 const experiences = [
   {
-    title: "Videochat WebApp (Exposys Data Labs : Internship)",
+    title: "Exposys Data Labs",
     project_sub_title: "Internship Project",
     icon: exposys_icon,
     iconBg: "#383E56",
     date: "Oct 2023 - Nov 2023",
-    github_link:"https://github.com/Niteshmeena9672/Threads",
+    // github_link:"https://github.com/Niteshmeena9672/Threads",
     points: [
       "Developed one video conferencing website called 'MeetMingle' using HTML, CSS, and JavaScript. Leveraged Agora SDK to provide a seamless and high-quality real-time voice and video communication experience for participants.",
       "Designed an intuitive interface forthe application, ensuring a user-friendly experience.",
@@ -178,6 +180,40 @@ const experiences = [
     ],
     
   },
+  {
+    title: "Software Development Intern",
+    project_sub_title: "Internship Project",
+    icon: itjobxs_icon,
+    iconBg: "#383E56",
+    date: "May 2023 - July 2023",
+    points: [
+        "Worked on designing and developing a fully responsive landing page for the ITJOBXS website using HTML, Vanilla CSS, and Bootstrap.",
+        "Enhanced website security by integrating reCAPTCHA, resulting in a 40% decrease in spam and malicious activities.",
+        "Achieved a 30% boost in authentic user engagement by effectively implementing user verification, identification, and removal of bots."
+    ],
+    tags: [
+        {
+            "name": "HTML",
+            "color": "blue-text-gradient"
+        },
+        {
+            "name": "Vanilla CSS",
+            "color": "green-text-gradient"
+        },
+        {
+            "name": "Bootstrap",
+            "color": "pink-text-gradient"
+        },
+        {
+            "name": "PHP",
+            "color": "blue-text-gradient"
+        },
+        {
+            "name": "MySQL",
+            "color": "orange-text-gradient"
+        }
+    ]
+},
   {
     title: "Threads App",
     project_sub_title: "Full-stack MERN Apps",

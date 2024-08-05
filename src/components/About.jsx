@@ -60,7 +60,13 @@ const About = () => {
         {/* Content for the introduction paragraph */}
         <p className="text-center w-full flex justify-center items-center" > 
 
-        Hello, I'm Nitesh Meena from Alwar, Rajasthan. Currently, I'm pursuing my undergraduate degree in chemical engineering at the Indian Institute of Technology, Jodhpur. I'm passionate about technology and enjoy diving into areas like Data Structures and Algorithms, Web Development, and Machine Learning. Always eager to learn and explore the tech world!
+        Hi, I'm Nitesh Meena, a recent graduate from the Indian Institute of Technology, Jodhpur. I have a strong background in software engineering, full stack development, and machine learning. I’m skilled in programming languages like C/C++, Python, and SQL, and web development tools like HTML, CSS, JavaScript, MongoDB, Express.js, React.js, Node.js, and Next.js. I also know machine learning tools like NumPy, Pandas, TensorFlow, and Scikit-learn. I have solved more than 500 Data Structure and Algorithm problems on various platforms.
+
+During my internships at Exposys Data Labs and ITJOBXS, I worked on building a video conferencing website and a responsive landing page, which helped me improve my skills in user experience and security.
+
+I've also created a Fitness Exercise app with over 1200 exercises and 500+ tutorial videos, and a Dr. Appointment web app that makes booking appointments easier. Right now, I’m working on a Real Estate platform to help people find rental properties more easily.
+
+I’m proud to be ranked in the top 30 on GFG at IIT Jodhpur and have certifications in Full Stack Web Development and Data Structures & Algorithms. I’m passionate about software engineering and full stack development and am looking for a challenging role where I can help create innovative tech solutions.
         </p>
 
       </motion.p>
