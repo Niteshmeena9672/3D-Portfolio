@@ -1,5 +1,5 @@
 // Importing the EarthCanvas component that displays a 3D model of the Earth (planet)
-import EarthCanvas from "./Earth";
+// import EarthCanvas from "./Earth";
 
 // Importing the BallCanvas component that displays a floating ball with a decal texture
 import BallCanvas from "./Ball";
@@ -11,4 +11,5 @@ import BallCanvas from "./Ball";
 import StarsCanvas from "./Stars";
 
 // Exporting all the canvas components for use in other parts of the application
-export { EarthCanvas, BallCanvas, StarsCanvas };
+// export { EarthCanvas, BallCanvas, StarsCanvas };
+export {  BallCanvas, StarsCanvas };

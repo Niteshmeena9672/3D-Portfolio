@@ -1,5 +1,6 @@
 // Importing canvas components for animations
-import { EarthCanvas, BallCanvas, StarsCanvas } from './canvas';
+// import { EarthCanvas, BallCanvas, StarsCanvas } from './canvas';
+import {  BallCanvas, StarsCanvas } from './canvas';
 
 // Importing all the components used in the layout of the webpage
 import Hero from "./Hero"; // The hero section of the webpage
@@ -21,7 +22,7 @@ export {
   Works,
   Contact,
   CanvasLoader,
-  EarthCanvas, // Canvas component for Earth animation
+  // EarthCanvas, // Canvas component for Earth animation
   BallCanvas, // Canvas component for Ball animation
   // ComputersCanvas, // Canvas component for Computers animation
   StarsCanvas // Canvas component for Stars animation

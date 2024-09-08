@@ -15,7 +15,7 @@ import { styles } from "../styles";
 import { slideIn } from "../utils/motion";
 
 // Importing the EarthCanvas component from the "./canvas" file
-import { EarthCanvas } from "./canvas";
+// import { EarthCanvas } from "./canvas";
 
 // Importing the higher-order component (HOC) SectionWrapper
 import { SectionWrapper } from "../hoc";
@@ -87,6 +87,7 @@ const Contact = () => {
         }
       );
   };
+
 
   return (
     <div
@@ -191,12 +192,12 @@ const Contact = () => {
       </motion.div>
 
       {/* EarthCanvas component */}
-      <motion.div
+      {/* <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
         <EarthCanvas />
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };
