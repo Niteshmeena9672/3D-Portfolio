@@ -29,7 +29,7 @@ const Hero = () => {
           </h1>
           {/* Subheading */}
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I'm final Year Student at IIT Jodhpur{" "}
+            I'm recent Graduate from IIT Jodhpur{" "}
             <br className="sm:block hidden" />
             <div>
               <div className="font-bold text-4xl py-3">Skills :</div>
